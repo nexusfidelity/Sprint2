@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 from PIL import Image
+from streamlit_player import st_player
+import streamlit.components.v1 as components
+
 
 #image initializing
 banner = Image.open('images/banner.jpg')
@@ -16,7 +19,7 @@ stream = Image.open('images/based_stream.jpg')
 similar = Image.open('images/similarity.jpg')
 
 #Streamlit section
-my_page = st.sidebar.radio('Sprint Navigation', ['Introduction', 'EDA part1','EDA part2','Recommender Engine','Collaborations'])
+my_page = st.sidebar.radio('Sprint Navigation', ['Introduction', 'EDA part1','EDA part2','Recommender Engine','Song','Collaborations'])
 
 if my_page == 'Introduction':
     st.title("Introduction")
@@ -78,6 +81,18 @@ elif my_page == 'Recommender Engine':
     st.header("Resulting Output")
     st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
 
+elif my_page == 'Song':
+    st.title("Song Recommended")
+    
+    st.header("Selected Song: Don\'t Leave Me Alone")
+    
+    st_player("https://www.youtube.com/watch?v=XeKoCLVXKNo")
+    
+    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    
+    st.header("Spotify Playlist")
+    st.components.v1.iframe("https://open.spotify.com/embed/playlist/7H9XEQlYxXNTANV75kYhJp", width=None, height=380)
+    
 elif my_page == 'Collaborations':
     st.title("Collaborations")
     st.header("Why Collaborate?")

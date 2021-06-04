@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
-from PIL import Image
+#from PIL import Image
 
 #image initializing
 #banner = Image.open('images/banner.jpg')

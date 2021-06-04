@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 from PIL import Image
-from streamlit_player import st_player
 import streamlit.components.v1 as components
 
 
@@ -85,8 +84,6 @@ elif my_page == 'Song':
     st.title("Song Recommended")
     
     st.header("Selected Song: Don\'t Leave Me Alone")
-    
-    st_player("https://www.youtube.com/watch?v=XeKoCLVXKNo")
     
     st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
     

@@ -15,6 +15,7 @@ stream = Image.open('images/based_stream.jpg')
 similar = Image.open('images/similarity.jpg')
 knn1 = Image.open('images/KNN1.jpg')
 knn2 = Image.open('images/KNN2.jpg')
+banner2 = Image.open('images/banner2.jpg')
 
 #Streamlit section
 my_page = st.sidebar.radio('Sprint Navigation', ['Introduction', 'EDA part1','EDA part2','Recommender Engine','Song','Collaborations','Contributors'])
@@ -24,15 +25,11 @@ if my_page == 'Introduction':
     
     st.header("Introducing David Guetta to the Philippine Market")
     st.image(banner)
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
-    
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    st.markdown('Pierre David Guetta born in 7 November 1967 is a French DJ, record producer and songwriter. He has racked up over 50 million record sales globally, whereas his total number of streams is over 10 billion. In 2011 and 2020, Guetta was voted as the number one DJ in the DJ Mag Top 100 DJs poll. In 2013, Billboard crowned "When Love Takes Over" as the number one dance-pop collaboration of all time.',unsafe_allow_html=False)
+    st.markdown('Born and raised in Paris, he released his first album, Just a Little More Love, in 2002. Later, he released Guetta Blaster (2004), Pop Life (2007), One Love (2009), One More Love (2010), Nothing But The Beat (2011), Listen (2014), Listen Again (2015) and 7 (2018). Guetta achieved mainstream success with his 2009 album One Love which included the hit singles "When Love Takes Over", "Gettin\' Over You", "Sexy Bitch" and "Memories", the first three of which reached number one in the United Kingdom. The 2011 follow-up album, Nothing but the Beat, continued this success, containing the hit singles "Where Them Girls At", "Little Bad Girl", "Without You", "Titanium" and "Turn Me On". In 2018, he released the album "7" featuring J Balvin, Nicki Minaj, Jason Derulo, Sia, G-Eazy and more. The album also featured twelve tracks by his alias Jack Back. In 2019, he started a new movement together with fellow producer MORTEN called "Future Rave". The duo released their "New Rave" EP in July 2020 for the fans to enjoy at home despite clubs being closed.[10] Guetta and Sia reunited to release "Let\'s Love" in 2020, amidst the COVID-19 pandemic.',unsafe_allow_html=False)
     
     st.header("Objectives")
     st.image(objective)
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
-    
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
     
 elif my_page == 'EDA part1':
     st.title("Exploratory Data Analysis part1")
@@ -41,15 +38,14 @@ elif my_page == 'EDA part1':
     
     st.image(image1)
     
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    st.markdown('Among the EDM artists, he has the highest popularity rating globally.',unsafe_allow_html=False)
     
     st.header("Number of Followers among EDM artist")
     
     st.image(image2)
     
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    st.markdown('He has the 2nd highest total followers among the global EDM artists.',unsafe_allow_html=False)
+    
     
 elif my_page == 'EDA part2':
     st.title("Exploratory Data Analysis part2")
@@ -58,15 +54,13 @@ elif my_page == 'EDA part2':
     
     st.image(image3)
     
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    st.markdown('However, in the Philippine streaming market, only 8 of his songs made it to top 200 from 2017-2021',unsafe_allow_html=False)
     
     st.header("David Guetta\'s Streaming History")
     
     st.image(image4)
     
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
-    st.markdown('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    st.markdown('The last time that DG’s song made it to top 200 in the Philippines was in Feb 2019. ',unsafe_allow_html=False)
     
 elif my_page == 'Recommender Engine':
     st.title("Recommender Engine")
@@ -120,7 +114,7 @@ elif my_page == 'Collaborations':
     st.header("Collaboration Based On similarity")
     st.image(similar)
     
-    st.markdown('Similarly, David Guetta can also boost his brand in the Philippines by collaborating with these artist based on similarity. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ac tellus eu hendrerit. Sed in diam scelerisque, ullamcorper justo ut, pharetra ex. Aenean vel sagittis odio, sed elementum arcu. Mauris ac enim ac tortor dictum molestie. Ut efficitur tempor odio sit amet hendrerit. Cras ut leo dignissim, efficitur justo in, varius risus. Praesent convallis rutrum leo vel egestas. Etiam malesuada a lacus at volutpat. Cras sed convallis neque, eget aliquam nulla.',unsafe_allow_html=False)
+    st.markdown('Similarly, David Guetta can also boost his brand in the Philippines by collaborating with these artist based on similarity. It can boost his brand not just in the Philippines but also globally',unsafe_allow_html=False)
     
 elif my_page == 'Contributors':
 
@@ -158,7 +152,9 @@ elif my_page == 'Contributors':
                               ,height=350)
         
     with col6:
-        st.components.v1.html('''''', height=350)
+        st.components.v1.html('''<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="reiniel-dan-pablo-5197641b4" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ph.linkedin.com/in/reiniel-dan-pablo-5197641b4?trk=profile-badge%22%3EReiniel Dan Pablo</a></div>
+                              ''', height=350)
         
     st.header('The Mentor')
     
@@ -177,19 +173,12 @@ elif my_page == 'Contributors':
     with col9:
         st.components.v1.html('''''', height=350)
         
-    st.header('The Instructor')
+    st.header('The Organization')
     
-    st.markdown('Our Instructor has introduced us to new concepts in Data Science such as: Linear Regression, KNN, SVM, and Spotify web scraping.',unsafe_allow_html=False)
+    st.image(banner2)
     
-    col10, col11, col12 = st.beta_columns(3)
+    st.markdown('Eskwelabs is an online data upskilling school for people and teams in Southeast Asia. Who gives access opportunities in the future of work through accessible data skills that are high in-demand as the amount of data in the world increases exponentially.',unsafe_allow_html=False)
     
-    with col10:
-        st.components.v1.html('''''', height=350)
-        
-    with col11:
-        st.components.v1.html('''<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-                              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="patricknuguid" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ph.linkedin.com/in/patricknuguid?trk=profile-badge%22%3EPatrick Nuguid</a></div>'''
-                              ,height=350)
-        
-    with col12:
-        st.components.v1.html('''''', height=350)
+    st.markdown('Our mission is to give access to engaging and future-relevant skills education is then crucial to help people and teams thrive in that future. In Southeast Asia, where more than half of the population is under the age of 30, we believe data education can democratize access to meaningful careers for workers and sustainable competitiveness for companies.',unsafe_allow_html=False)
+    
+    st.markdown('At the same time, learning happens in all kinds of ways. Many learning environments, both in school and online, rely on lecture formats which are rarely engaging and effective for technical skills. Eskwelabs aims to enable participatory and active learning experiences so beyond acquiring in-demand skills, we can also rediscover the joy of learning and reinventing ourselves.',unsafe_allow_html=False)
